@@ -1,0 +1,342 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg {
+    background: black;
+    color: white;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.title h1 a {
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 50px;
+    margin: 0 35px;
+    display: flex;
+    transition: color 0.5s ease-out;
+}
+
+.title h1 a:hover {
+    color: yellowgreen;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-out;
+}
+
+.menu ul li a:hover {
+    color: greenyellow;
+    box-shadow: 0px 2px 0px rgba(0, 225, 0, 0.9);
+}
+
+/* Burger Icon Styles */
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 1100; /* Ensure burger icon is clickable */
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: greenyellow;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.green {
+    color: greenyellow;
+}
+
+.topleft {
+    flex: 1;
+}
+
+.topleft h2 {
+    font-size: 2rem;
+}
+
+.topleft p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.topright {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topright img {
+    width: 70%;
+    border: 4px solid black;
+    border-radius: 50%;
+    box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.9);
+    transition: all 0.5s ease-out;
+}
+
+.topright img:hover {
+    border-color: greenyellow;
+    box-shadow: 0px 3px 15px rgba(0, 225, 0, 0.9);
+}
+
+/* Limiter */
+.limeter {
+    height: 4px;
+    background-color: greenyellow;
+    margin: 20px 60px;
+}
+
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 30px;
+}
+
+.projects h1 {
+    color: yellowgreen;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    border: 2px solid greenyellow;
+    box-shadow: 0px 3px 15px rgba(0, 225, 0, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+}
+
+.box img {
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 30px;
+}
+
+.box2 {
+    border: 2px solid rgb(205, 208, 200);
+    box-shadow: 0px 3px 15px rgba(169, 175, 169, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.box2 h1 {
+    color: greenyellow;
+}
+
+.box2 li {
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.box2:hover {
+    background-color: rgba(129, 132, 123, 0.372);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 30px;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box3 input {
+    color: greenyellow;
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid greenyellow;
+    border-radius: 40px;
+    box-shadow: 0px 3px 15px rgba(0, 255, 0, 0.9);
+}
+
+.box3 input::placeholder {
+    color: greenyellow;
+}
+
+.box3 button {
+    padding: 20px;
+    border: 2px solid greenyellow;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    width: 150px;
+    color: white;
+    background-color: greenyellow;
+    box-shadow: 0px 3px 15px rgba(0, 255, 0, 0.9);
+    transition: all 0.3s ease;
+}
+
+.box3 button:hover {
+    background-color: black;
+    color: greenyellow;
+}
+
+/* Footer */
+.footer {
+    color: greenyellow;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        background: rgb(0, 0, 0);
+        position: relative;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        position: absolute;
+        top: 60px; /* Adjust if needed */
+        left: 0;
+        border-top: 1px solid greenyellow;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 0;
+    }
+
+    .menu ul li a {
+        padding: 15px;
+        display: block;
+        color: white;
+        border-top: 1px solid gray;
+    }
+
+    .menu ul li a:hover {
+        background-color: greenyellow;
+        color: black;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .topright img {
+        width: 80%;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box2 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
